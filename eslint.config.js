@@ -6,6 +6,9 @@ import tsPlugin from '@typescript-eslint/eslint-plugin';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 
 export default [
+  {
+    ignores: ['src/cube/**']
+  },
   js.configs.recommended,
   {
     files: ['**/*.ts'],
