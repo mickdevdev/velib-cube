@@ -23,5 +23,22 @@ services:
       - postgres-data:/var/lib/postgresql/data
       - ./docker/sql:/docker-entrypoint-initdb.d      
 
+  cube:
+    image: cubejs/cube:v1.3.37
+    ports:
+      - '4000:4000'
+      - '15432:15432'
+    environment:
+      CUBEJS_DEV_MODE: true    
+      CUBEJS_DB_HOST: postgres
+      CUBEJS_DB_NAME: appdb
+      CUBEJS_DB_USER: postgres
+      CUBEJS_DB_PASS: mysecretpassword
+      CUBEJS_DB_TYPE: postgres
+      CUBEJS_API_SECRET: secret
+      CUBEJS_SCHEMA_PATH: model
+    volumes:
+      - ./src/cube:/cube/conf
+
 volumes:
   postgres-data:

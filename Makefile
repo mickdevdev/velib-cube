@@ -1,4 +1,4 @@
-.PHONY: install up down sh test lint fix install-hooks
+.PHONY: install up down sh test lint fix install-hooks import-stations
 
 NODE_SERVICE=app
 
@@ -28,3 +28,6 @@ install-hooks:
 	cp .githooks/pre-commit .git/hooks/pre-commit
 	chmod +x .git/hooks/pre-commit
 	@echo "Git Hook installed"
+
+import-stations:
+	docker-compose exec ${NODE_SERVICE} npx tsx src/scripts/importStations.ts
