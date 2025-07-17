@@ -38,7 +38,7 @@ describe('StationController', () => {
 
       expect(response.status).toBe(200);
       expect(response.body).toEqual({
-        id: "3",
+        id: '3',
         ...updateStationDto,
       });
     });

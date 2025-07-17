@@ -1,9 +1,9 @@
-PUT http://localhost:3000/api/stations/1
+PUT http://localhost:3000/api/stations/36473
 Content-Type: application/json
 
 {
-    "name": "Bastille",
-    "capacity": 15,
-    "lon": 2.294694,
-    "lat": 40
+    "name": "Cadet - La Fayette",
+    "capacity": 25,
+    "lon": 2.3435704037547,
+    "lat": 48.875601632672
 }

@@ -12,6 +12,7 @@
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
     "pg": "^8.16.3",
+    "pg-format": "^1.0.4",
     "zod": "^4.0.5"
   },
   "devDependencies": {
@@ -19,6 +20,7 @@
     "@types/jest": "^30.0.0",
     "@types/node": "^24.0.14",
     "@types/pg": "^8.15.4",
+    "@types/pg-format": "^1.0.5",
     "@types/supertest": "^6.0.3",
     "@typescript-eslint/eslint-plugin": "^8.37.0",
     "@typescript-eslint/parser": "^8.37.0",

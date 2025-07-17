@@ -20,7 +20,8 @@ export default [
         process: 'readonly',
         __dirname: 'readonly',
         __filename: 'readonly',
-        ...globals.jest
+        ...globals.jest,
+        fetch: 'readonly',
       },
     },
     plugins: {
