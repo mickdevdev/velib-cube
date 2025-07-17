@@ -1,0 +1,9 @@
+PUT http://localhost:3000/api/stations/1
+Content-Type: application/json
+
+{
+    "name": "Bastille",
+    "capacity": 15,
+    "lon": 2.294694,
+    "lat": 40
+}
